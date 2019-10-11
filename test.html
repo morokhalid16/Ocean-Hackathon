@@ -1,1 +1,22 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Le titre de la page</title>
+</head>
 
+<body>
+    <div>
+        <p id="myP">Un peu de texte, <a>un lien</a> et <strong>une portion en emphase</strong></p>
+    </div>
+
+    <script>
+        var paragraph = document.getElementById('myP');
+        var first = paragraph.firstChild;
+        var last = paragraph.lastChild;
+
+        alert(first.nodeName.toLowerCase());
+        alert(last.nodeName.toLowerCase());
+    </script>
+</body>
+</html>
